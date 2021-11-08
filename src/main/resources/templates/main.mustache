@@ -1,0 +1,36 @@
+<html>
+<head>
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<div class="container text-center mb-4">
+<div class="text-align-center" style="font-size: 25px">
+    <div style="font-size: 100px" height="100px">
+        <form action="/logout" method="post" height="10px">
+
+            <input type="submit" value="Sign Out" class="btn btn-info" style="font-size: 45px"/>
+        </form>
+    </div>
+    <div>
+        <form method="post" height="100px">
+            <button type="submit" class="btn btn-success" name="button" value="Sis!" style="font-size: 45px">Sis!</button>
+            <button type="submit" class="btn btn-success" name="button" value="Bro!" style="font-size: 45px">Bro!</button>
+        </form>
+    </div>
+</div>
+    <div style="font-size: 25px">Cообщение</div>
+    {{#messages}}
+    <div>
+        <span style="font-size: 40px">{{text}}</span>
+        <p class="text-secondary" style="font-size: 15px; Color: gray;">
+            <span>By</span>
+            <strong>{{authorName}}</strong>
+            <span>{{tag}}</span>
+        </p>
+
+    </div>
+    {{/messages}}
+</div>
+</body>
+</html>

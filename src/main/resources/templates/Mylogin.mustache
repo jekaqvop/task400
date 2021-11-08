@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Spring Security Example </title>
+    <title>Bootstrap 101 Template</title>
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+<div class="container text-center mb-4" style="font-size: 20px">
+    <div class="btn btn-secondary row">
+        <a class="btn btn-light btn-outline-dark btn-lg btn-block" href="/oauth2/authorization/google"
+           role="button">
+            <img width="20px" style="margin-bottom:3px; margin-right:5px" alt="Google sign-in"
+                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/512px-Google_%22G%22_Logo.svg.png"/>
+            Login with Google
+        </a>
+    </div>
+    <div class="btn btn-secondary row border border-dark">
+        <a class="btn btn-light btn-outline-dark btn-lg btn-block" href="/oauth2/authorization/github" role="button"
+           style="text-transform:none">
+            <img width="20px" style="margin-bottom:3px; margin-right:5px" alt="GitHub sign-in"
+                 src="https://upload.wikimedia.org/wikipedia/commons/a/ae/Github-desktop-logo-symbol.svg"/>
+            Login with GitHub
+        </a>
+    </div>
+    <div class="btn btn-secondary row border border-dark">
+        <a class="btn btn-light btn-outline-dark btn-lg btn-block" href="/oauth2/authorization/facebook"
+           role="button"
+           style="text-transform:none">
+            <img width="20px" style="margin-bottom:3px; margin-right:5px" alt="Facebook sign-in"
+                 src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Facebook-logo-black.png"/>
+            Login with Facebook
+        </a>
+    </div>
+    <div class="border border-dark">
+        {{#message}}
+            {{message}}
+        {{/message}}
+    </div>
+
+</div>
+</body>
+</html>
